@@ -35,9 +35,10 @@
                     </span>
                 </h4>
 
-                <div class="subheading mb-5">
-                    {{information.address}} {{information.phone}}
-                    <a href="mailto:{{information.email}}">{{information.email}}</a>
+                <div class="subheading mb-3">
+                    {{information.address}} <br /> <a href="tel:{{information.phone}}"
+                        class="text-red">{{information.phone}}</a>,
+                    <a href="mailto:{{information.email}}" style="color: blue;"> {{information.email}}</a>
                 </div>
                 <p class="lead mb-5">{{information.coverInfo}}</p>
                 <div class="social-icons">
@@ -57,52 +58,69 @@
                 <h2 class="mb-5">Experience</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">QC Lead</h3>
-                        <div class="subheading mb-3">Vinova Pte. Ltd</div>
-                        <div>Localtion:...</div>
+                        <h3 class="mb-0">Vinova Pte. Ltd</h3>
+                        <div class="mb-3"><b>Localtion:</b> 28/14 Le Thi Hong Street, Ward 7, Go Vap District, Ho Chi
+                            Minh City, Vietnam</div>
+                        <div class="subheading mb-3">Quality Control Lead</div>
+                        <div class="mb-3"><b>Responsibilities:</b>
+                            <ul class="fa-ul mb-3">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Training technical
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Mentor member
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Assigning project
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Management team
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Team development orientation
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subheading mb-3">Quality Control</div>
+                        <div><b>Project:</b> Gofix FM</div>
+                        <div><b>Project Description:</b> GOfix is the handyman services partner that you can trust.
+                            We offer aircon servicing and repairs, electrical outlet repairs and installation, plumbing
+                            and home improvement services.
+                            As a service brand under EM Services Pte Ltd, GOfix is built on the value and experience
+                            from over 30 years of facilities management and community building in Singapore.
+                            Our team of efficient and experienced GOfixers pledge to carry out their service to you with
+                            Professionalism, Integrity and Care.</div>
+                        <div><b>Team size:</b> 9 (7 devs and 2 qcs)</div>
                         <ng-container>
-                            <div>Responsibilities:
-                                <ul *ngFor="let i of vinova.responsibilities">
+                            <div><b>Responsibilities:</b>
+                                <ul class="fa-ul mb-0" *ngFor="let i of vinova.responsibilities">
                                     <li>
+                                        <span class="fa-li"><i class="fas fa-check"></i></span>
                                         {{i}}
                                     </li>
                                 </ul>
                             </div>
-                            <div>
-                                Goals:
-                                <ul>
-                                    <li *ngFor="let i of vinova.goals">
-                                        {{i}}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                Projects:
-                                <span *ngFor="let i of vinova.projects">
-                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
-                                </span>
-                            </div>
+                            <div><b>Other projects:</b> NYP, TB Marine, Sugar OKRs</div>
                         </ng-container>
+
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Nov 2019 - Present</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Nov 2019 - present</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">QC Engineer</h3>
                         <div class="subheading mb-3">AES Technologies</div>
-                        <div>Localtion:....</div>
+                        <div>Localtion: Bcons Tower, 167A Nguyen Van Thuong Street, Ward 25, Binh Thanh District, Ho Chi
+                            Minh City, Vietnam</div>
                         <ng-container>
                             <div>Responsibilities:
                                 <ul *ngFor="let i of aes.responsibilities">
                                     <li>
-                                        {{i}}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                Goals:
-                                <ul>
-                                    <li *ngFor="let i of aes.goals">
                                         {{i}}
                                     </li>
                                 </ul>
@@ -121,19 +139,11 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Techical Support Staff</h3>
                         <div class="subheading mb-3">Thái Sơn Soft Co .,Ltd</div>
-                        <div>Localtion:....</div>
+                        <div>Localtion: 33A Cuu Long Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</div>
                         <ng-container>
                             <div>Responsibilities:
                                 <ul *ngFor="let i of thaison.responsibilities">
                                     <li>
-                                        {{i}}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                Goals:
-                                <ul>
-                                    <li *ngFor="let i of thaison.goals">
                                         {{i}}
                                     </li>
                                 </ul>
@@ -181,63 +191,80 @@
                     <li class="list-inline-item"><img src='assets/img/jmeter.png' width="48" height="48" /></li>
                     <li class="list-inline-item"><img src='assets/img/postman.png' width="48" height="48" /></li>
                     <li class="list-inline-item"><img src='assets/img/swagger.png' width="48" height="48" /></li>
+                    <li class="list-inline-item"><img src='assets/img/trello.png' width="48" height="48" /></li>
                 </ul>
-                <div class="subheading mb-3">Workflow
-                    <ng-container>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Manage teams
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Teamwork and collaboration
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Training team
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Agile development & Scrum
-                            </li>
-                        </ul>
-                    </ng-container>
-                </div>
-                <div class="subheading mb-3">Technical
-                    <ng-container>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Write test cases
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Regression testing
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Integration testing
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                System testing
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                API testing
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Load testing
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Data testing
-                            </li>
-                        </ul>
-                    </ng-container>
-                </div>
+                <div class="subheading mb-3">Workflow</div>
+                <ng-container>
+                    <ul class="fa-ul mb-3">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Manage teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Teamwork and collaboration
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Training team
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile development & Scrum
+                        </li>
+                    </ul>
+                </ng-container>
+                <div class="subheading mb-3">Technical SKILLS</div>
+                <ng-container>
+                    <ul class="fa-ul mb-3">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Write test cases
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Regression testing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Integration testing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            System testing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            API testing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Load testing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data testing
+                        </li>
+                    </ul>
+                </ng-container>
+
+                <div class="subheading mb-3">Soft skills</div>
+                <ng-container>
+                    <ul class="fa-ul mb-3">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Time management
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Business communication
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Self-study and reseach document
+                        </li>
+                    </ul>
+                </ng-container>
             </div>
         </section>
         <hr class="m-0" />

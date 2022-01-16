@@ -1,6 +1,5 @@
 export default class BaseComponent{
     responsibilities: Array<string> =[];
-    goals:Array<string> = [];
     projects: Array<Project> = [];
 }
 

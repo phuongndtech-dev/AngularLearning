@@ -14,25 +14,29 @@ import Social from './models/social';
 export class ResumeComponent implements OnInit {
 
   vinova: Viniva={
-    responsibilities:["test 1","test2",""],
-    goals: ["","",""],
-    projects: [{name: "", link:""},
-                ]
+    responsibilities:["Test GUI and functions on the App",
+                      "Test flows of all modules on CMS",
+                      "Review and analyze the requirement",
+                      "Write the checklist/ test case and run them",
+                      "Execute test ( GUI test, Integration test, System test, Acceptance test on production enviroment)",
+                      "Test API by Swagger, Postman",
+                      "Test database by Posgresql",
+                      "Interact with Client to understand product requirements.",
+                      "Report file"
+                    ],
+    projects: [{name: "Gofix FM", link:"https://apps.apple.com/sg/app/gofix-fm/id1568980348"},
+              ]
   }
 
   aes: AES={
     responsibilities:["Testing main flow and UX/UI.",
                       "Manage bugs and features on Excel.",
                       "Reporting to the leader."],
-    goals: ["Projects go live.",
-            "Assured high-quality product.",
-            "Preventing bugs before the product is on staging."],
     projects: [{name: "Savills", link:"https://www.savills.com.vn/"}]
   }
 
   thaison: ThaiSon={
     responsibilities:["","",""],
-    goals: ["","",""],
     projects: [{name: "", link:""},
                {name:"", link:""}]
   }
