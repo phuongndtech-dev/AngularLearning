@@ -36,9 +36,13 @@ export class ResumeComponent implements OnInit {
   }
 
   thaison: ThaiSon={
-    responsibilities:["","",""],
-    projects: [{name: "", link:""},
-               {name:"", link:""}]
+    responsibilities:["Support customers use custom software via Team viewer",
+                      "Solve E-Cuss problems over the phone",
+                      "Attend professional training sessions",
+                      "Instructions and support required by customers",
+                      "The monthly report"
+                    ],
+    projects: [{name:"EBH", link:"https://ebh.vn/"}]
   }
 
   information: information = {
@@ -46,15 +50,18 @@ export class ResumeComponent implements OnInit {
     address: "114/15 Bui Quang La streeet, ward 12, Tan Binh district, HCMC",
     phone: "+84 366 113 219",
     email: "trucanh.imex@gmail.com",
-    coverInfo: "I have three years of working with manual testing. My projects are e-commerce, estate, and logictis domain." +
-               "I've tested the Mobile App, Web, CMS, APIs, and virtual environments."
+    coverInfo: `I have 3 years of experience in a Software Testing job. 
+                I worked as a tester, a test lead. 
+                I used to work in a company specializing in testing and got training about Software testing methodically.
+                I can directly work with customers.
+                I am always ready to learn new things and love learning. I am responsible, patient, innovative, and have the ability to work under pressure.`
   }
 
   social: Social={
     linkedin: "https://www.linkedin.com/in/truanhtester/",
     gitHub:"",
     twitter:"",
-    resume:""
+    resume:"https://docs.google.com/document/d/1uVfZeS7Ihh8nZ7W6st9xP6ONtXvW7sTR/edit"
   }
 
   constructor() { }

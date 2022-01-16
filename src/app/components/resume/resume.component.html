@@ -1,5 +1,4 @@
 <body id="page-top">
-    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">{{information.name}}</span>
@@ -20,9 +19,7 @@
             </ul>
         </div>
     </nav>
-    <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <h1 class="mb-0">
@@ -30,14 +27,14 @@
                     <span class="text-primary">Anh</span>
                 </h1>
                 <h4>
-                    <span class="text-primary margin-left-fifteen-percent">
+                    <span class="text-primary margin-left-sixteen-percent">
                         A Quality Control Engineer
                     </span>
                 </h4>
 
                 <div class="subheading mb-3">
                     {{information.address}} <br /> <a href="tel:{{information.phone}}"
-                        class="text-red">{{information.phone}}</a>,
+                        class="text-primary">{{information.phone}}</a>,
                     <a href="mailto:{{information.email}}" style="color: blue;"> {{information.email}}</a>
                 </div>
                 <p class="lead mb-5">{{information.coverInfo}}</p>
@@ -52,7 +49,6 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
                 <h2 class="mb-5">Experience</h2>
@@ -88,14 +84,16 @@
                         </div>
                         <div class="subheading mb-3">Quality Control</div>
                         <div><b>Project:</b> Gofix FM</div>
-                        <div><b>Project Description:</b> GOfix is the handyman services partner that you can trust.
+                        <div><b>Project Description:</b>
+                            GOfix is the handyman services partner that you can trust.
                             We offer aircon servicing and repairs, electrical outlet repairs and installation, plumbing
                             and home improvement services.
                             As a service brand under EM Services Pte Ltd, GOfix is built on the value and experience
                             from over 30 years of facilities management and community building in Singapore.
                             Our team of efficient and experienced GOfixers pledge to carry out their service to you with
-                            Professionalism, Integrity and Care.</div>
-                        <div><b>Team size:</b> 9 (7 devs and 2 qcs)</div>
+                            Professionalism, Integrity and Care.
+                        </div>
+                        <div><b>Team size:</b> 9 (6 devs, 2 QCs, and 1 PM)</div>
                         <ng-container>
                             <div><b>Responsibilities:</b>
                                 <ul class="fa-ul mb-0" *ngFor="let i of vinova.responsibilities">
@@ -113,23 +111,46 @@
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">QC Engineer</h3>
-                        <div class="subheading mb-3">AES Technologies</div>
-                        <div>Localtion: Bcons Tower, 167A Nguyen Van Thuong Street, Ward 25, Binh Thanh District, Ho Chi
+                        <h3 class="mb-0">AES Technologies</h3>
+                        <div><b>Localtion:</b> Bcons Tower, 167A Nguyen Van Thuong Street, Ward 25, Binh Thanh District,
+                            Ho Chi
                             Minh City, Vietnam</div>
+                        <div class="subheading mb-3">Quality Control</div>
+                        <div>
+                            <b>Projects:</b>
+                            <span *ngFor="let i of aes.projects">
+                                <a href="{{i.link}}" target="_blank"> {{i.name}} </a>
+                            </span>
+                        </div>
+                        <div><b>Project Description:</b>
+                            Savills Vietnam is the largest and most experienced real estate practice with offices in
+                            Hanoi and Ho Chi Minh City.
+                            The company provides comprehensive property services such as: Residential Sales, Commercial
+                            Leasing, Residential
+                            Leasing, Research & Consultancy, Valuation & Feasibility Study, Banking & Corporate
+                            Services, Investment Brokerage &
+                            Advisory, Retail Consultancy & Leasing, Property & Asset Management, Tenant Advisory &
+                            Representation, Industrial
+                            Consultancy & Leasing, Marketing & Creative services. Savills Vietnam had been continuously
+                            recognised in
+                            prestigious and credible property award programmes before stopping its participation in 2017
+                            and redirecting the
+                            award fees to “Savills Cares” fund as a part of Corporate Social Responsibility (CSR)
+                            campaign to better benefit
+                            local people and charities.
+                            Currently, Savills Vietnam consists of over 2,000 experienced and professional staff
+                            nationwide and keep expanding
+                            further.
+                        </div>
+                        <div><b>Team size:</b> 7 (5 devs, 1 QC, and 1 PM)</div>
                         <ng-container>
-                            <div>Responsibilities:
-                                <ul *ngFor="let i of aes.responsibilities">
+                            <div><b>Responsibilities:</b>
+                                <ul class="fa-ul mb-0" *ngFor="let i of aes.responsibilities">
                                     <li>
+                                        <span class="fa-li"><i class="fas fa-check"></i></span>
                                         {{i}}
                                     </li>
                                 </ul>
-                            </div>
-                            <div>
-                                Projects:
-                                <span *ngFor="let i of aes.projects">
-                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
-                                </span>
                             </div>
                         </ng-container>
                     </div>
@@ -137,22 +158,38 @@
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Techical Support Staff</h3>
-                        <div class="subheading mb-3">Thái Sơn Soft Co .,Ltd</div>
-                        <div>Localtion: 33A Cuu Long Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</div>
+                        <h3 class="mb-0">Thái Sơn Soft Co .,Ltd</h3>
+                        <div><b>Localtion:</b> 33A Cuu Long Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam
+                        </div>
+                        <div class="subheading mb-3">Techical Support Staff</div>
+                        <div>
+                            <b>Projects:</b>
+                            <span *ngFor="let i of thaison.projects">
+                                <a href="{{i.link}}" target="_blank"> {{i.name}} </a>
+                            </span>
+                        </div>
+                        <div><b>Project Description:</b>
+                            eBH is an electronic social insurance declaration software officially deployed under the
+                            IVAN model signed by the Vietnam Social Insurance No. 04092015/HD-BHXH-TSD on September 7,
+                            2015.
+                            eBH software supports businesses to make records and perform transactions related to the
+                            operations of Vietnam social insurance in accordance with the provisions of Decision No.
+                            08/2015/QD-TTg of the Prime Minister dated 09 -03-2015 on piloting electronic transactions
+                            in carrying out procedures for participation in social insurance, health insurance,
+                            unemployment insurance, application for issuance of insurance books, health insurance cards
+                            and Decision No. 763/QD-BHXH dated July 10, 2015 of the General Director of Vietnam Social
+                            Insurance on promulgating regulations on dossiers, procedures and registration process for
+                            providing I-VAN services.
+                        </div>
+                        <div><b>Team size:</b> 30 technical supporters</div>
                         <ng-container>
-                            <div>Responsibilities:
-                                <ul *ngFor="let i of thaison.responsibilities">
+                            <div><b>Responsibilities:</b>
+                                <ul class="fa-ul mb-0" *ngFor="let i of thaison.responsibilities">
                                     <li>
+                                        <span class="fa-li"><i class="fas fa-check"></i></span>
                                         {{i}}
                                     </li>
                                 </ul>
-                            </div>
-                            <div>
-                                Projects:
-                                <span *ngFor="let i of thaison.projects">
-                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
-                                </span>
                             </div>
                         </ng-container>
                     </div>
