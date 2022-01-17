@@ -21,7 +21,7 @@ export class ResumeComponent implements OnInit {
                       "Execute test ( GUI test, Integration test, System test, Acceptance test on production enviroment)",
                       "Test API by Swagger, Postman",
                       "Test database by Posgresql",
-                      "Interact with Client to understand product requirements.",
+                      "Interact with Client to understand product requirements",
                       "Report to PM"
                     ],
     projects: [{name: "Gofix FM", link:"https://apps.apple.com/sg/app/gofix-fm/id1568980348"},
@@ -29,9 +29,9 @@ export class ResumeComponent implements OnInit {
   }
 
   aes: AES={
-    responsibilities:["Testing main flow and UX/UI.",
-                      "Manage bugs and features on Excel.",
-                      "Reporting to the leader."],
+    responsibilities:["Testing main flow and UX/UI",
+                      "Manage bugs and features on Excel",
+                      "Reporting to the leader"],
     projects: [{name: "Savills", link:"https://www.savills.com.vn/"}]
   }
 
