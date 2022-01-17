@@ -22,7 +22,7 @@ export class ResumeComponent implements OnInit {
                       "Test API by Swagger, Postman",
                       "Test database by Posgresql",
                       "Interact with Client to understand product requirements.",
-                      "Report file"
+                      "Report to PM"
                     ],
     projects: [{name: "Gofix FM", link:"https://apps.apple.com/sg/app/gofix-fm/id1568980348"},
               ]
@@ -40,7 +40,7 @@ export class ResumeComponent implements OnInit {
                       "Solve E-Cuss problems over the phone",
                       "Attend professional training sessions",
                       "Instructions and support required by customers",
-                      "The monthly report"
+                      "Monthly report to GM"
                     ],
     projects: [{name:"EBH", link:"https://ebh.vn/"}]
   }
@@ -61,7 +61,7 @@ export class ResumeComponent implements OnInit {
     linkedin: "https://www.linkedin.com/in/truanhtester/",
     gitHub:"",
     twitter:"",
-    resume:"https://docs.google.com/document/d/1uVfZeS7Ihh8nZ7W6st9xP6ONtXvW7sTR/edit"
+    resume:"https://drive.google.com/file/d/18ilyQoRzetn2ovcmbgI29d1r6zHa-QFp/view?usp=sharing"
   }
 
   constructor() { }
