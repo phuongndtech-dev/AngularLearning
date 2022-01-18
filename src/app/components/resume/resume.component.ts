@@ -47,7 +47,7 @@ export class ResumeComponent implements OnInit {
 
   information: information = {
     name: "Tran Thi Truc Anh",
-    address: "114/15 Bui Quang La streeet, ward 12, Tan Binh district, HCMC",
+    address: "114/15 Bui Quang La streeet, ward 12, Go Vap district, HCMC",
     phone: "+84 366 113 219",
     email: "trucanh.imex@gmail.com",
     coverInfo: `I have 3 years of experience in a Software Testing job. 

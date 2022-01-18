@@ -87,7 +87,11 @@
                             </ul>
                         </div>
                         <div class="subheading mb-3 text-primary">Quality Control</div>
-                        <div><b>Project:</b> Gofix FM</div>
+                        <div><b>Project:</b>
+                            <span *ngFor="let i of vinova.projects">
+                                <a href="{{i.link}}" target="_blank"> {{i.name}}(ODC) </a>
+                            </span>
+                        </div>
                         <div><b>Project Description:</b>
                             GOfix is a company that offers aircon servicing and repairs, electrical
                             outlet repairs and installation, plumbing and home improvement services, and facilities
@@ -103,7 +107,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div><b>Other projects:</b> NYP, TB Marine, Sugar OKRs, Engine, Cortishare, Soundfy</div>
+                            <div><b>Other projects(short time):</b> NYP, TB Marine, Sugar OKRs, Engine, Cortishare, Soundfy</div>
                         </ng-container>
 
                     </div>
@@ -119,7 +123,7 @@
                         <div>
                             <b>Projects:</b>
                             <span *ngFor="let i of aes.projects">
-                                <a href="{{i.link}}" target="_blank"> {{i.name}} </a>
+                                <a href="{{i.link}}" target="_blank"> {{i.name}}(ODC) </a>
                             </span>
                         </div>
                         <div><b>Project Description:</b>
@@ -149,7 +153,7 @@
                         <div>
                             <b>Projects:</b>
                             <span *ngFor="let i of thaison.projects">
-                                <a href="{{i.link}}" target="_blank"> {{i.name}} </a>
+                                <a href="{{i.link}}" target="_blank"> {{i.name}}(ODC) </a>
                             </span>
                         </div>
                         <div><b>Project Description:</b>
