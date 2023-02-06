@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import AES from './models/experience-companies/aes';
+import SGTech from './models/experience-companies/sgtech';
 import ThaiSon from './models/experience-companies/thaison';
 import Viniva from './models/experience-companies/vinova';
 import information from './models/information';
@@ -12,6 +13,13 @@ import Social from './models/social';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+
+  sgtech: SGTech={
+    responsibilities:["Testing main flow and UX/UI",
+                      "Manage bugs and features on Excel",
+                      "Reporting to the leader"],
+    projects: [{name: "Minmed Clinic", link:"https://minmed.sg/"}]
+  }
 
   vinova: Viniva={
     responsibilities:["Test GUI and functions on the App",
@@ -50,7 +58,7 @@ export class ResumeComponent implements OnInit {
     address: "114/15 Bui Quang La streeet, ward 12, Go Vap district, HCMC",
     phone: "+84 366 113 219",
     email: "trucanh.imex@gmail.com",
-    coverInfo: `I have 3 years of experience in a Software Testing job. 
+    coverInfo: `I have over 4 years of experience in a Software Testing job. 
                 I worked as a tester, a test lead. 
                 I used to work in a company specializing in testing and got training about Software testing methodically.
                 I can directly work with customers.
