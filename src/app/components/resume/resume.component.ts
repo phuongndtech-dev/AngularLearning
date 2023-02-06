@@ -69,7 +69,7 @@ export class ResumeComponent implements OnInit {
     linkedin: "https://www.linkedin.com/in/truanhtester/",
     gitHub:"",
     twitter:"",
-    resume:"https://drive.google.com/file/d/18ilyQoRzetn2ovcmbgI29d1r6zHa-QFp/view"
+    resume:"https://drive.google.com/file/d/1hOequOSDRfVKAA6lVmGwtj8-1oNlr4Pd/view"
   }
 
   constructor() { }
